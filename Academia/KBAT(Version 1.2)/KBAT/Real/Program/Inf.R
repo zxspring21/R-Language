@@ -1,0 +1,14 @@
+PATH1<-c('C:/KBAT/Real/Example/COGA/Chr1')
+PATHout<-c('C:\\KBAT\\Real\\Output')
+Num<-c(Num)
+St<-c(St)
+End<-c(End)
+Weight<-c(Weight)
+LDdata<-c(LDdata)
+borw2<-c(1)
+op<-c(5)
+Tuo.size<-c(1)
+B<-c(B)
+Xlabe<-c('Position')
+Stat<-Stat
+bonf<-0.05/Num

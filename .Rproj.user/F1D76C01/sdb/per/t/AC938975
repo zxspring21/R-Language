@@ -1,0 +1,18 @@
+{
+    "contents" : "mydata<-read.csv(\"http://www.ats.ucla.edu/stat/data/binary.csv\")\nhead(mydata)\nsummary(mydata)\nsapply(mydata,sd)\nxtabs(~admit+rank,data=mydata)\n\nmydata$rank<-factor(mydata$rank)\nmylogit<-glm(admit~gre+gpa+rank,data=mydata,family = \"binomial\")\nsummary(mylogit)\nconfint(mylogit)\nconfint.default(mylogit)\nwald.test(b=coef(mylogit),Sigma=vcov(mylogit),Terms=4:6)\nl <- cbind (0,0,0,1,-1,0)\nwald.test(b=coef(mylogit),Sigma=vcov(mylogit),L=l)\nexp(coef(mylogit))\nexp(cbind(OR=coef(mylogit),confint(mylogit)))\nnewdata1 <- with (mydata,data.frame(gre=mean(gre),gpa=mean(gpa),rank=factor(1:4)))\nnewdata1$rankP<-predict(mylogit,newdata=newdata1,type=\"response\")\nnewdata2<-with(mydata,data.frame(gre=rep(seq(from=200,to=800,length.out=100),4),gpa=mean(gpa),rank=factor(rep(1:4,each=100))))\nnewdata3 <- cbind(newdata2, predict(mylogit, newdata = newdata2, type = \"link\",se = TRUE))\nnewdata3 <- within(newdata3, {\n                 PredictedProb <- plogis(fit)\n                 LL <- plogis(fit - (1.96 * se.fit))\n                 UL <- plogis(fit + (1.96 * se.fit))\n  })\n               head(newdata3)\n  ggplot(newdata3, aes(x = gre, y = PredictedProb)) + geom_ribbon(aes(ymin = LL,ymax = UL, fill = rank), alpha = 0.2) + geom_line(aes(colour = rank),\n                                                                                                                                     size = 1)",
+    "created" : 1435732019495.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2122318839",
+    "id" : "AC938975",
+    "lastKnownWriteTime" : 1436783682,
+    "path" : "~/SC2014/Untitled.R",
+    "project_path" : "Untitled.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

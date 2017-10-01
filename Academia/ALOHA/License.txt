@@ -1,0 +1,17 @@
+=====================                                     
+= ALOHA version 2.0 =                                   
+=====================                                     
+                  
+------------------------                                                        
+- THE LICENSE OF ALOHA -                                                        
+------------------------                                                        
+                  
+All copyright are reserved by authors of ALOHA. We welcome any noncommercial use of ALOHA for your own research. Please do NOT modify or distribute the program of ALOHA in any form without the permission of authors of ALOHA. Commercial use of ALOHA should be directed to hsinchou@stat.sinica.edu.tw. For free software ALOHA, we assume no warranty and no responsibility for the results of analyses. If publications are based on the results from the use of ALOHA, please cite the following reference: 
+
+Hsin-Chou Yang, Hsin-Chi Lin, Mei-Chu Huang, Ling-Hui Li, Wen-Harn Pan, Jer-Yuarn Wu, and Yuan-Tsong Chen (2010). A new analysis tool for individual-level allele frequency for genomic studies. BMC Genomics.
+
+You are more than welcom to contact us if you meet any inconvenience, problems or program bugs when you use ALOHA. All comments and suggestions are highly appreciated.
+                                                           
+Correspondence: Hsin-Chou Yang (hsinchou@stat.sinica.edu.tw), Institute of Statistical Science, Academia Sinica, 128, Academia Road, Section 2 Nankang, Taipei 115, Taiwan.
+
+

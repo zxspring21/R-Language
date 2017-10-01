@@ -1,0 +1,18 @@
+{
+    "contents" : "library(xlsx)\ndata <- read.xlsx(\"/Users/portran/Desktop/Academia/PATIENT1000_0703.xlsx\",1) \n#classes<-sapply(data,class)\ndata.age<-data[,c(3)]\ndata.diagnoise <- data[ ,c(6)]\nx<- c(young=0, adult=0,old=0,l=0,ll=0)\ny<- c(a=0,b=0,c=0,d=0,e=0)\nfor(j in 1:1000){\n  if(data.diagnoise[i]==703){\n    y[1]=y[1]+1\n  }else if(data.diagnoise[i]==7051){\n    y[2]=y[2]+1\n  }else if((data.diagnoise[i]==5714)){\n    y[3]=y[3]+1\n  }else if((data.diagnoise[i]==702)){\n    y[4]=y[4]+1\n  }else{ #7041\n    y[5]=y[5]+1\n  }\n    \n}\nfor(i in 1:1000){\n  if(data.age[i]<19){\n    x[1]=x[1]+1\n  }else if (data.age[i]<=64){\n    x[2]=x[2]+1\n  }else{\n    x[3]=x[3]+1\n  }\n}\nhist(x,main=\"people and diagonise\", pro=T)\n#plot(x,y,main = \"people and diagonise\")\n#classes\n#head(data,1)\n#head(data)\n#d<-scan()\n\n#summary(mydata)\n#sapply(mydata,sd)\n#xtabs(BIRTH,data=mydata)\n\n",
+    "created" : 1436788051185.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2399013121",
+    "id" : "567AF19D",
+    "lastKnownWriteTime" : 1436922167,
+    "path" : "~/SC2014/Untitled3.R",
+    "project_path" : "Untitled3.R",
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

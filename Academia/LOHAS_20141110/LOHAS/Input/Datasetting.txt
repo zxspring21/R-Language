@@ -1,0 +1,10 @@
+Population_name	CEU	CHB	YRI
+SNP_ID	1	1	1
+Chromosome	2	2	2
+Physical_position	3	3	3
+ABcall	4	4	4
+RS_number			
+MAF_threshold			
+MAF_weight			
+Start_field	1	1	1
+End_field	7	7	7

@@ -1,0 +1,3 @@
+C:/LOHAS/Examples/Example2/CEU/
+C:/LOHAS/Examples/Example2/CHB/
+C:/LOHAS/Examples/Example2/YRI/

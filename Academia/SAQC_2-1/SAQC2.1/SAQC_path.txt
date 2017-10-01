@@ -1,0 +1,4 @@
+rm(list=ls())
+SAQCgui=paste("C:/SAQC2.1/PROGRAM/SAQC_interactive.r",sep="")
+source(SAQCgui)
+
